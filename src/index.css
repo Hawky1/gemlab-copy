@@ -1,19 +1,9 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 
->>>>>>> 9462543 (Initial commit: GemLab replication complete)
->>>>>>> 901a0d3 (Initial commit: GemLab project with all refinements)
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 901a0d3 (Initial commit: GemLab project with all refinements)
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
@@ -108,16 +98,15 @@ All colors MUST be HSL.
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
 
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
 }
-<<<<<<< HEAD
-=======
-=======
+
 :root {
   --font-title: 'Zalando Sans Expanded', 'Arial Black', sans-serif;
   --font-body: 'Rethink Sans', 'Open Sans', sans-serif;
@@ -128,6 +117,8 @@ All colors MUST be HSL.
 
   color-scheme: light;
   color: #213547;
+  /* Keeping the custom background gradient but ensuring it works with Tailwind's layer system if possible, 
+     or acts as an override. */
   background-color: #ffffff;
   background-image: linear-gradient(180deg, #FFFFFF 0%, #BFD5E6 40%, #5D8AA8 100%);
   background-attachment: fixed;
@@ -174,5 +165,3 @@ select,
 textarea {
   font-family: var(--font-body);
 }
->>>>>>> 9462543 (Initial commit: GemLab replication complete)
->>>>>>> 901a0d3 (Initial commit: GemLab project with all refinements)
